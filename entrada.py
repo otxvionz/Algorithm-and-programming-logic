@@ -7,4 +7,7 @@ print('seu dominio agora é',dominio,)
 email = username + '@' + dominio
 print("o seu email é" , email)
 
+palavra = "jaca"
+#colocar a string como toda maiuscula
+print("Colocando o texto todo em maiuscula:",palavra.upper())
 
