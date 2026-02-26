@@ -1,27 +1,17 @@
-username = input('Qual o seu nome?')
-print('Ola',username, ',seja bem vindo ao meu mundo')
-senha = input('Qual senha voce ira utilizar?')
-print('pronto! sua senha foi salva no meu armazentamento')
-dominio = input('Dominio que sera utilizado?')
-print('seu dominio agora é',dominio,)
-email = username + '@' + dominio
-print("o seu email é" , email)
+nome = input('Qual seu nome?')
+sobrenome = input('Qual seu sobrenome?')
+print('Olá',nome,sobrenome,'seja bem-vindo ao meu sistema')
+universidade = input('Qual Universidade você estuda?')
+dia_nascimento = input('Dia de nascimento: ')
+mes_nascimento = input('Mes de nascimento: ')
+ano_nascimento = input('Ano de nascimento: ')
 
-palavra = "jaca"
-#colocar a string como toda maiuscula
-print("Colocando o texto todo em maiuscula:",palavra.upper())
+e_mail = nome.lower() + '.' + sobrenome.lower() + '@' + universidade.lower() + '.br'
+senha = 'a' + str(e_mail.count('a')) + 'e' + str(e_mail.count('e')) + 'i' + str(e_mail.count('i')) + 'o' + str(e_mail.count('o')) + 'u' + str(e_mail.count('u'))
 
 
-print(email)
-a_c = email.count('a')
-e_c = email.count('e')
-i_c = email.count('i')
-o_c = email.count('o')
-u_c = email.count('u')
-nova_senha = 'a' + str(a_c) + 'e' + str(e_c) + 'i' + str(i_c) + 'o' + str(o_c) + 'u' + str(u_c)
-print(nova_senha)
+print('O seu e-mail é:{}'.format(e_mail))
+print('Sua senha é:{}'.format(senha))
 
-
-
-
-
+print('seu email e sua senha é {}'.format(e_mail,senha))
+    
